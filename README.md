@@ -1,5 +1,10 @@
 # Explainable AI for Detecting Behavioural Biases in Consumer Discussions on Bio-Based Innovations
 
+
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
 > An Explainable NLP Framework for Understanding Behavioural Barriers to Bio-Based Innovation Adoption
 
 ---
