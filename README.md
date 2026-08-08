@@ -384,15 +384,5 @@ If you use this repository in academic work, please cite:
   howpublished = {\url{https://github.com/rico0-dotcom/explainable-bioinnovation-adoption}}
 }
 
----
 
-# License
-
-This repository is released under the MIT License.
-
----
-
-# Author
-
-**Anuj Pal**
 
