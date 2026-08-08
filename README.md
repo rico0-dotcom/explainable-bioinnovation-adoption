@@ -156,7 +156,7 @@ Dataset characteristics
 | Attribute | Value |
 |-----------|------:|
 | Documents | 100 |
-| Languages | English, Finnish |
+| Languages | English (75), Finnish (25) |
 | Translation | Finnish translated into English before NLP processing |
 | Topic Modelling | BERTopic |
 | Behavioural Classification | Zero-shot Natural Language Inference |
@@ -278,7 +278,7 @@ Behavioural bias probabilities were compared between English and Finnish discuss
 | Trust | 0.0034 | Significant |
 | Social Norms | 0.0193 | Significant |
 
-The analysis indicates statistically significant cross-language differences in four behavioural constructs, suggesting that behavioural responses to bio-based innovations may vary across linguistic and cultural contexts. Loss aversion remained consistently high across both language groups and did not differ significantly.
+The analysis indicates statistically significant cross-language differences in four behavioural constructs, suggesting that behavioural responses to bio-based innovations may vary across linguistic and cultural contexts. Loss aversion remained consistently high across both language groups (English: 70.5%, Finnish: 79.3%) and did not differ significantly.
 
 ---
 
