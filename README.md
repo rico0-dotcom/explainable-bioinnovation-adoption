@@ -111,35 +111,53 @@ The framework identifies six behavioural constructs derived from behavioural eco
 # Repository Structure
 
 ```
-Behavioural_Bias_Detection_Framework.ipynb
-
-data/
+explainable-bioinnovation-adoption/
 │
-├── unified_bio_discussion_data.csv
-├── clustered_bio_innovations.csv
-├── bias_analysis_results.csv
-└── bias_summary.csv
+├── README.md
+├── requirements.txt
+│
+├── notebook/
+│   └── Explainable_Behavioural_Bias_Detection.ipynb
+│
+├── data/
+│   └── unified_bio_discussion_data.csv
+│
+├── outputs/
+    ├── clustered_bio_innovations.csv
+    ├── bias_analysis_results.csv
+    └── bias_summary.csv
 ```
 
 ---
 
 # Dataset
 
-The pilot dataset contains multilingual consumer discussions collected from online platforms relating to bio-based innovations including:
+The dataset includes discussions gathered from:
 
-- Bio-based construction materials
-- Mass timber
-- Wood fibre insulation
-- Bioplastics
-- Sustainable packaging
-- Engineered wood products
+- Reddit (r/Construction, r/HomeImprovement, r/woodworking, r/environment, r/sustainability)
+- Public Finnish discussion forums
+- Online discussions relating to:
+  - Mass timber
+  - Cross-laminated timber (CLT)
+  - Engineered wood products
+  - Wood fibre insulation
+  - Bio-based packaging
+  - Bioplastics
+  - Hempcrete
+  - Sustainable construction materials
 
 Dataset characteristics
 
-- 100 consumer discussions
-- English and Finnish
-- Multiple online discussion platforms
-- Preprocessed and translated into English for NLP analysis
+| Attribute | Value |
+|-----------|------:|
+| Documents | 100 |
+| Languages | English, Finnish |
+| Translation | Finnish translated into English before NLP processing |
+| Topic Modelling | BERTopic |
+| Behavioural Classification | Zero-shot Natural Language Inference |
+| Explainability | KeyBERT |
+
+The dataset should be viewed as a pilot corpus intended to demonstrate the proposed methodology rather than provide population-level behavioural estimates.
 
 ---
 
@@ -208,14 +226,14 @@ The framework reports:
 
 ---
 
-# Example Findings
+# Key Findings
 
-Pilot study (n = 100)
+The proposed framework successfully identified behavioural barriers within multilingual discussions on bio-based innovations.
 
-Most prevalent behavioural barriers:
+## Aggregate Behavioural Bias Prevalence
 
-| Behavioural Bias | Mean Probability |
-|------------------|----------------:|
+| Behavioural Construct | Mean Probability |
+|-----------------------|----------------:|
 | Loss Aversion | 72.7% |
 | Trust | 53.1% |
 | Ambiguity Aversion | 43.0% |
@@ -223,7 +241,39 @@ Most prevalent behavioural barriers:
 | Status Quo Bias | 29.6% |
 | Familiarity Bias | 17.9% |
 
+Loss aversion emerged as the dominant behavioural barrier across the pilot dataset, indicating that consumers frequently emphasised perceived risks and potential losses associated with adopting unfamiliar bio-based products. Trust and ambiguity aversion were also prominent, suggesting that uncertainty regarding product performance and confidence in manufacturer claims remain important adoption barriers.
+
 These findings should be interpreted as exploratory observations from a proof-of-concept dataset rather than population estimates.
+
+---
+
+# Topic Discovery
+
+BERTopic identified two dominant discussion themes:
+
+| Topic | Interpretation |
+|--------|----------------|
+| Topic 0 | Uncertainty About Novel Bio-Materials |
+| Topic 1 | Risk Aversion in Material Decisions |
+
+These themes indicate that consumer discussions were primarily centred around uncertainty, perceived performance risk, and comparisons between established construction materials and emerging bio-based alternatives. :contentReference[oaicite:1]{index=1}
+
+---
+
+# Statistical Validation
+
+Behavioural bias probabilities were compared between English and Finnish discussions using the Mann–Whitney U test.
+
+| Behavioural Construct | p-value | Interpretation |
+|-----------------------|--------:|----------------|
+| Status Quo Bias | 0.0162 | Significant |
+| Ambiguity Aversion | 0.0139 | Significant |
+| Loss Aversion | 0.1387 | Not Significant |
+| Familiarity Bias | 0.0978 | Not Significant |
+| Trust | 0.0034 | Significant |
+| Social Norms | 0.0193 | Significant |
+
+The analysis indicates statistically significant cross-language differences in four behavioural constructs, suggesting that behavioural responses to bio-based innovations may vary across linguistic and cultural contexts. Loss aversion remained consistently high across both language groups and did not differ significantly.
 
 ---
 
@@ -252,18 +302,19 @@ clustered_bio_innovations.csv
 
 ---
 
-# Practical Applications
+# Research Implications
 
-The proposed framework can support:
+The findings suggest that promoting bio-based innovations requires more than communicating environmental benefits.
 
-- Sustainable product marketing
-- Forest bioeconomy research
-- Behavioural economics
-- Innovation adoption studies
-- Explainable AI research
-- Sustainability communication
-- Consumer behaviour analysis
-- Policy design
+Instead, communication strategies should address the behavioural mechanisms underlying consumer resistance.
+
+The pilot study indicates that:
+
+- Loss aversion should be mitigated through warranties, guarantees, and economic case studies.
+- Trust should be strengthened through independent certification and transparent performance reporting.
+- Ambiguity aversion should be reduced by providing long-term durability evidence and accessible technical documentation.
+
+The proposed framework demonstrates how explainable NLP can convert large collections of consumer discussions into actionable behavioural insights for firms and policymakers. 
 
 ---
 
