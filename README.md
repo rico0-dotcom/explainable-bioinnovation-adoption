@@ -370,15 +370,19 @@ to generate interpretable behavioural insights from unstructured consumer discus
 
 ---
 
-# Citation
+## Citation
 
 If you use this repository in academic work, please cite:
 
-```
-Pal, A.
-Explainable AI for Detecting Behavioural Biases in Consumer Discussions on Bio-Based Innovations.
-GitHub Repository.
-```
+```bibtex
+@misc{pal2026explainable,
+  author = {Pal, Anuj},
+  title = {Explainable AI for Detecting Behavioural Biases in Consumer Discussions on Bio-Based Innovations},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/rico0-dotcom/explainable-bioinnovation-adoption}}
+}
 
 ---
 
@@ -392,13 +396,3 @@ This repository is released under the MIT License.
 
 **Anuj Pal**
 
-MBA (Finance)
-
-Research interests
-
-- Behavioural Economics
-- Sustainable Finance
-- Explainable AI
-- Computational Social Science
-- Natural Language Processing
-- Innovation Adoption
