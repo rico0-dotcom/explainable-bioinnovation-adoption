@@ -256,7 +256,7 @@ BERTopic identified two dominant discussion themes:
 | Topic 0 | Uncertainty About Novel Bio-Materials |
 | Topic 1 | Risk Aversion in Material Decisions |
 
-These themes indicate that consumer discussions were primarily centred around uncertainty, perceived performance risk, and comparisons between established construction materials and emerging bio-based alternatives. :contentReference[oaicite:1]{index=1}
+These themes indicate that consumer discussions were primarily centred around uncertainty, perceived performance risk, and comparisons between established construction materials and emerging bio-based alternatives. 
 
 ---
 
